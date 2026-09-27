@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-label="Döner im Fladenbrot">
+  <circle cx="36" cy="36" r="35" fill="#fbe8c4"/>
+  <path d="M14 24 L58 24 L36 62 Z" fill="#f3d9a4" stroke="#8a5a2b" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M17 24 Q26 15 36 22 Q46 15 55 24 Z" fill="#8a4a24"/>
+  <path d="M18 23 Q24 17 29 23 M32 21 Q37 15 42 21 M44 23 Q50 17 55 23" stroke="#4fa35a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <circle cx="26" cy="20" r="3" fill="#e3432d"/><circle cx="44" cy="19" r="3" fill="#e3432d"/>
+  <path d="M22 27 Q36 31 50 27" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

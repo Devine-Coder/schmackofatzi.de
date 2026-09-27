@@ -1,0 +1,203 @@
+/* Schmackofatzi – Dönerhaus (Satire)
+   Keine externen Fonts/Skripte: nur Systemschriften, keine Cookies, kein Tracking. */
+
+:root {
+  --tomato: #b8321f;
+  --tomato-dark: #8e2414;
+  --bread: #f6e7c8;
+  --bread-dark: #e9cf9a;
+  --herb: #2f7a4a;
+  --ink: #2a1a12;
+  --ink-soft: #5b4636;
+  --paper: #fffaf0;
+  --card: #ffffff;
+  --line: #ecdcbc;
+  --shadow: 0 10px 30px rgba(74, 38, 16, .12);
+  --radius: 18px;
+  --maxw: 1100px;
+  --font: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Arial Black", "Helvetica Neue", Impact, system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bread: #3a2a1d;
+    --bread-dark: #4a3625;
+    --ink: #f7ead6;
+    --ink-soft: #d7c3a8;
+    --paper: #1f1610;
+    --card: #2a1f17;
+    --line: #4a3727;
+    --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--tomato); }
+@media (prefers-color-scheme: dark) { a { color: #ff8a6b; } }
+
+/* Satire-Hinweis oben */
+.satire-banner {
+  background: #ffd84d;
+  color: #2a1a12;
+  text-align: center;
+  font-size: .92rem;
+  padding: .55rem 1rem;
+  border-bottom: 2px dashed #2a1a12;
+}
+.satire-banner a { color: #2a1a12; font-weight: 700; }
+
+/* Kopfzeile */
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: .75rem max(1rem, calc((100% - var(--maxw)) / 2));
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--ink); }
+.brand span { font-family: var(--font-display); font-size: 1.25rem; letter-spacing: .5px; }
+.main-nav { display: flex; gap: 1.1rem; flex-wrap: wrap; }
+.main-nav a { color: var(--ink-soft); text-decoration: none; font-weight: 600; }
+.main-nav a:hover { color: var(--tomato); }
+
+/* Hero */
+.hero {
+  max-width: var(--maxw); margin: 0 auto;
+  display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center;
+  padding: 3.5rem 1rem 2.5rem;
+}
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; color: var(--herb); font-weight: 800; margin: 0 0 .5rem; }
+h1, h2, h3 { line-height: 1.15; }
+h1 { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.8rem); margin: 0 0 1rem; }
+h2 { font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.3rem); margin: 0 0 .75rem; }
+.accent { color: var(--tomato); }
+.lead { font-size: 1.15rem; color: var(--ink-soft); max-width: 36rem; }
+.hero-actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.btn {
+  display: inline-block; font: inherit; font-weight: 800; cursor: pointer;
+  padding: .85rem 1.4rem; border-radius: 999px; text-decoration: none;
+  border: 2px solid var(--tomato); transition: transform .15s ease, background .15s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: var(--tomato); color: #fff; }
+.btn-primary:hover { background: var(--tomato-dark); }
+.btn-ghost { background: transparent; color: var(--tomato); }
+@media (prefers-color-scheme: dark) { .btn-ghost { color: #ff8a6b; border-color: #ff8a6b; } }
+.hero-art { display: flex; justify-content: center; }
+.hero-art img { width: min(360px, 80%); filter: drop-shadow(0 18px 24px rgba(74, 38, 16, .25)); }
+
+/* Abschnitte */
+.section { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1rem; scroll-margin-top: 72px; }
+.section-intro { color: var(--ink-soft); max-width: 46rem; margin-top: 0; }
+
+/* Speisekarte */
+.menu-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; margin-top: 1.5rem;
+}
+.menu-item {
+  display: grid; grid-template-columns: 72px 1fr; gap: 1rem; align-items: start;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.1rem; box-shadow: var(--shadow);
+}
+.menu-item h3 { margin: 0 0 .35rem; font-size: 1.1rem; display: flex; justify-content: space-between; gap: .5rem; flex-wrap: wrap; }
+.menu-item p { margin: 0; color: var(--ink-soft); font-size: .95rem; }
+.price { color: var(--tomato); white-space: nowrap; }
+@media (prefers-color-scheme: dark) { .price { color: #ff8a6b; } }
+
+/* Chef */
+.chef { display: grid; grid-template-columns: 1fr 1.4fr; gap: 2rem; align-items: center; }
+.chef-art { display: flex; justify-content: center; }
+.chef-art img { width: min(300px, 80%); cursor: pointer; }
+.chef-name { font-size: 1.3rem; font-weight: 800; margin: 0 0 .75rem; }
+.tag {
+  display: inline-block; vertical-align: middle; font-size: .7rem; font-weight: 800; letter-spacing: .5px;
+  text-transform: uppercase; background: #ffd84d; color: #2a1a12; border-radius: 6px; padding: .1rem .45rem;
+}
+.wisdom { padding-left: 1.2rem; }
+.wisdom li { margin: .35rem 0; }
+.chef h3 small { font-weight: 400; color: var(--ink-soft); font-size: .8em; }
+
+/* Bewertungen / Karussell */
+.reviews { background: var(--bread); border-radius: 28px; margin-top: 1rem; margin-bottom: 1rem; overflow: hidden; }
+.carousel { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: .75rem; margin-top: 1.5rem; }
+.carousel-track { display: grid; }
+.review {
+  grid-area: 1 / 1; margin: 0;
+  background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 1.5rem 1.75rem; border: 1px solid var(--line);
+  opacity: 0; transform: translateX(24px) scale(.98); pointer-events: none;
+  transition: opacity .5s ease, transform .5s ease;
+}
+.review[data-active] { opacity: 1; transform: none; pointer-events: auto; }
+.review-head { display: flex; align-items: center; gap: .9rem; margin-bottom: .75rem; }
+.review figcaption { font-weight: 800; }
+.avatar {
+  flex: none; width: 48px; height: 48px; border-radius: 50%;
+  display: grid; place-items: center; color: #fff; font-weight: 900; font-size: 1.2rem;
+  background: var(--c, var(--tomato));
+}
+.stars { color: #e0a100; letter-spacing: 2px; }
+.review blockquote { margin: 0; font-size: 1.12rem; }
+.carousel-nav {
+  width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--tomato);
+  background: var(--card); color: var(--tomato); font-size: 1.6rem; line-height: 1; cursor: pointer;
+}
+.carousel-nav:hover { background: var(--tomato); color: #fff; }
+.carousel-dots { display: flex; justify-content: center; gap: .5rem; margin-top: 1rem; }
+.carousel-dots button {
+  width: 11px; height: 11px; border-radius: 50%; border: 0; padding: 0; cursor: pointer;
+  background: var(--bread-dark);
+}
+.carousel-dots button[aria-selected="true"] { background: var(--tomato); width: 28px; border-radius: 6px; }
+
+/* Öffnungszeiten */
+.hours { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.hours-list { display: grid; grid-template-columns: auto 1fr; gap: .4rem 1.25rem; margin: 0; }
+.hours-list dt { font-weight: 800; }
+.hours-list dd { margin: 0; color: var(--ink-soft); }
+.muted { color: var(--ink-soft); font-style: italic; }
+
+/* Fußzeile */
+.site-footer {
+  text-align: center; padding: 2rem 1rem 3rem; color: var(--ink-soft);
+  border-top: 1px solid var(--line); font-size: .92rem;
+}
+.site-footer p { margin: .25rem 0; }
+
+/* Döner-Regen beim Klick auf „Schmackofatz!“ */
+.funken { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 50; }
+.funke { position: absolute; top: -3rem; font-size: 2rem; animation: fallen linear forwards; }
+@keyframes fallen { to { transform: translateY(110vh) rotate(540deg); } }
+
+/* Unterseite Hinweis */
+.page { max-width: 760px; margin: 0 auto; padding: 3rem 1rem; }
+.page h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+.page h2 { font-size: 1.3rem; margin-top: 2rem; }
+
+/* Mobil */
+@media (max-width: 800px) {
+  .hero, .chef, .hours { grid-template-columns: 1fr; }
+  .hero { padding-top: 2rem; text-align: left; }
+  .hero-art { order: -1; }
+  .hero-art img { width: min(240px, 60%); }
+  .main-nav { display: none; }
+  .carousel { grid-template-columns: 1fr; }
+  .carousel-nav { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .review, .btn { transition: none; }
+}

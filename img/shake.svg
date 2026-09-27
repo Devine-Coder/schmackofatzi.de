@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-label="Ayran-Shake mit Sahne">
+  <circle cx="36" cy="36" r="35" fill="#fbe8c4"/>
+  <path d="M22 30 L50 30 L46 62 L26 62 Z" fill="#f4f7fb" stroke="#8aa0b8" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M24 42 L48 42" stroke="#dfe7f0" stroke-width="2"/>
+  <path d="M20 30 Q20 20 30 22 Q32 12 40 16 Q48 12 50 22 Q56 24 52 30 Z" fill="#fff" stroke="#c9b99a" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="40" cy="14" r="3.5" fill="#e3432d"/>
+  <path d="M44 8 L40 30" stroke="#b8321f" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-label="Lahmacun">
+  <circle cx="36" cy="36" r="35" fill="#fbe8c4"/>
+  <circle cx="36" cy="36" r="25" fill="#f3d9a4" stroke="#8a5a2b" stroke-width="2.5"/>
+  <circle cx="36" cy="36" r="20" fill="#c9502e"/>
+  <g fill="#7a2c14"><circle cx="28" cy="30" r="2.5"/><circle cx="42" cy="28" r="2.5"/><circle cx="36" cy="40" r="2.5"/><circle cx="46" cy="42" r="2.5"/><circle cx="26" cy="44" r="2.5"/></g>
+  <path d="M30 36 Q34 32 38 36 M40 34 Q44 30 47 35" stroke="#4fa35a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M36 11 L36 61" stroke="#fff" stroke-width="1.5" opacity=".5"/>
+</svg>

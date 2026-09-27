@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Schmackofatzi Logo">
+  <circle cx="32" cy="32" r="31" fill="#b8321f"/>
+  <!-- Fladenbrot-Tasche -->
+  <path d="M14 22 L50 22 L32 52 Z" fill="#f3d9a4" stroke="#8a5a2b" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Füllung -->
+  <path d="M17 22 Q24 16 32 21 Q40 16 47 22 Z" fill="#8a4a24"/>
+  <path d="M18 22 Q23 18 27 22 M30 21 Q34 17 38 21 M40 22 Q44 18 47 22" stroke="#4fa35a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="25" cy="20" r="2.4" fill="#e3432d"/>
+  <circle cx="38" cy="19.5" r="2.4" fill="#e3432d"/>
+  <path d="M22 24 L42 24" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity=".9"/>
+</svg>

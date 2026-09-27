@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 320" role="img" aria-label="Cartoon-Koch mit Sprechblase Schmackofatz">
+  <!-- Sprechblase -->
+  <g transform="translate(150 8)">
+    <path d="M10 0 H138 Q148 0 148 10 V46 Q148 56 138 56 H48 L26 74 L30 56 H10 Q0 56 0 46 V10 Q0 0 10 0 Z" fill="#fff" stroke="#2a1a12" stroke-width="3"/>
+    <text x="74" y="35" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="17" fill="#b8321f">Schmackofatz!</text>
+  </g>
+
+  <!-- Körper / Kochjacke -->
+  <path d="M60 320 Q60 236 150 226 Q240 236 240 320 Z" fill="#fdfdfb" stroke="#2a1a12" stroke-width="3"/>
+  <circle cx="135" cy="268" r="5" fill="#2a1a12"/>
+  <circle cx="165" cy="268" r="5" fill="#2a1a12"/>
+  <circle cx="135" cy="296" r="5" fill="#2a1a12"/>
+  <circle cx="165" cy="296" r="5" fill="#2a1a12"/>
+  <!-- Halstuch -->
+  <path d="M120 232 Q150 250 180 232 L172 256 Q150 246 128 256 Z" fill="#b8321f" stroke="#2a1a12" stroke-width="2.5"/>
+
+  <!-- Kopf -->
+  <circle cx="150" cy="170" r="62" fill="#f2c7a0" stroke="#2a1a12" stroke-width="3"/>
+  <!-- Ohren -->
+  <ellipse cx="88" cy="172" rx="10" ry="15" fill="#f2c7a0" stroke="#2a1a12" stroke-width="3"/>
+  <ellipse cx="212" cy="172" rx="10" ry="15" fill="#f2c7a0" stroke="#2a1a12" stroke-width="3"/>
+  <!-- Augen (zugekniffen vor Genuss) -->
+  <path d="M118 160 Q128 150 138 160" stroke="#2a1a12" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M162 160 Q172 150 182 160" stroke="#2a1a12" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Wangen -->
+  <circle cx="115" cy="186" r="10" fill="#e98b7a" opacity=".6"/>
+  <circle cx="185" cy="186" r="10" fill="#e98b7a" opacity=".6"/>
+  <!-- Nase -->
+  <path d="M150 166 Q158 180 148 184" stroke="#2a1a12" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Schnurrbart -->
+  <path d="M150 192 Q130 186 116 196 Q128 204 150 198 Q172 204 184 196 Q170 186 150 192 Z" fill="#6b3f22" stroke="#2a1a12" stroke-width="2"/>
+  <!-- Mund -->
+  <path d="M132 206 Q150 224 168 206" stroke="#2a1a12" stroke-width="3.5" fill="#8e2414" stroke-linejoin="round"/>
+
+  <!-- Kochmütze -->
+  <path d="M104 120 Q86 84 116 74 Q124 48 152 56 Q178 44 190 72 Q220 78 198 120 Z" fill="#fff" stroke="#2a1a12" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="102" y="112" width="96" height="22" rx="6" fill="#fff" stroke="#2a1a12" stroke-width="3"/>
+  <path d="M126 112 V92 M150 112 V86 M174 112 V92" stroke="#d9d4c7" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Hand mit Döner -->
+  <g transform="translate(206 250) rotate(12)">
+    <path d="M0 0 L48 0 L24 40 Z" fill="#f3d9a4" stroke="#8a5a2b" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M4 0 Q12 -8 24 -2 Q36 -8 44 0 Z" fill="#8a4a24"/>
+    <path d="M6 -1 Q12 -6 18 -1 M28 -2 Q34 -7 40 -1" stroke="#4fa35a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="18" cy="30" r="12" fill="#f2c7a0" stroke="#2a1a12" stroke-width="2.5"/>
+  </g>
+</svg>
