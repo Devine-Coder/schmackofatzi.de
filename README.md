@@ -1,6 +1,6 @@
 # schmackofatzi.de
 
-Satirische Parodie-Seite eines Dönerladens – kein echter Laden, alle Bewertungen frei erfunden.
+Website des Dönerhauses Schmackofatzi.
 
 - Reines HTML/CSS/JavaScript, keine Abhängigkeiten, keine externen Ressourcen, keine Cookies.
 - Gehostet mit GitHub Pages unter https://schmackofatzi.de (siehe `CNAME`).
