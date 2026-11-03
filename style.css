@@ -1,4 +1,4 @@
-/* Schmackofatzi – Dönerhaus (Satire)
+/* Schmackofatzi – Dönerhaus
    Keine externen Fonts/Skripte: nur Systemschriften, keine Cookies, kein Tracking. */
 
 :root {
@@ -45,17 +45,6 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--tomato); }
 @media (prefers-color-scheme: dark) { a { color: #ff8a6b; } }
-
-/* Satire-Hinweis oben */
-.satire-banner {
-  background: #ffd84d;
-  color: #2a1a12;
-  text-align: center;
-  font-size: .92rem;
-  padding: .55rem 1rem;
-  border-bottom: 2px dashed #2a1a12;
-}
-.satire-banner a { color: #2a1a12; font-weight: 700; }
 
 /* Kopfzeile */
 .site-header {
